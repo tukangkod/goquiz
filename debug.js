@@ -5,7 +5,7 @@ var debug = {};
 debug.setup = function() {
     debug.genDebugButton();
     debug.enableClickEvent();
-}
+};
 
 debug.clicks = function(t) {
     var frameId = t.data('frameId');
@@ -38,9 +38,9 @@ debug.genDebugButton = function() {
     if (gqd.frameIds.length > 0) {
         $.each(gqd.frameIds, function(n, id) {
             console.log(n, id);
-        })
+        });
     } else console.log('empty');
-}
+};
 
 debug.enableClickEvent = function() {
     $('#debug input.dbtn').click(function(e) {
