@@ -1,0 +1,25 @@
+#login, #question, #result, #debug {
+    display:none;
+}
+
+.title {
+    font: 11pt Arial;
+}
+
+#splash {
+
+}
+
+/** Splash */
+#splashLoading {
+    display:none;
+}
+
+/** debug */
+#debug {
+    border: 1px solid silver;
+    width: 300px;
+    position:absolute;
+    top:0;
+    right:0;
+}

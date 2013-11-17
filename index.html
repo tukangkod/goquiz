@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login</title>
+    <link type="text/css" rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div id="splash" class="main">
+        <div id="splashWelcome" class="frame">
+            <div class="title">goQuiz</div>
+            <div class="body"></div>
+        </div>
+        <div id="splashLoading" class="frame">
+            <div class="title">Loading...</div>
+            <div class="body"></div>
+        </div>
+    </div>
+
+    <div id="login" class="main frame">
+        <div class="title">Login</div>
+        <div class="body">
+            <div id="dUsername">
+                <label for="username"></label>
+                <input type="text" id="username" />
+            </div>
+            <div id="dPassword">
+                <label for="password"></label>
+                <input type="password" id="password" />
+            </div>
+            <div id="submit">
+                <input type="submit" value="Submit" />
+            </div>
+        </div>
+    </div>
+
+    <div id="question" class="main">
+        <div id="questionMain" class="frame">
+            <div class="title">Question Area</div>
+            <span class="body"></span>
+        </div>
+        <div id="questionHint" class="frame">
+            <div class="title">Hint Area</div>
+            <div class="body"></div>
+        </div>
+        <div id="questionVideo" class="frame">
+            <div class="title">Video Area</div>
+            <div class="body"></div>
+        </div>
+        <div id="questionAnswer" class="frame">
+            <div class="title">Answer Area</div>
+            <div class="body"></div>
+        </div>
+        <div id="questionResult" class="frame">
+            <div class="title">Result Area</div>
+            <div class="body"></div>
+        </div>
+        <div id="questionPoint" class="frame">
+            <div class="title">Point Area</div>
+            <div class="body"></div>
+        </div>
+    </div>
+
+    <div id="result" class="main">
+        <div id="resultIndividual" class="frame">
+            <div class="title">Result Area</div>
+            <div class="body"></div>
+        </div>
+        <div id="resultAll" class="frame">
+            <div class="title">Team Result Area</div>
+            <div class="body"></div>
+        </div>
+    </div>
+
+    <div id="debug">
+        <div class="title">Debug Area</div>
+        <div class="body">
+            <div id="debugAction"></div>
+        </div>
+    </div>
+
+    <script type="application/javascript" src="utils/jquery.min.js"></script>
+    <script type="application/javascript" src="utils/jquery-ui.min.js"></script>
+    <script type="application/javascript" src="debug.js"></script>
+    <script type="application/javascript" src="display.js"></script>
+    <script type="application/javascript" src="gq.js"></script>
+    <script type="application/javascript">
+        $(document).ready(function() {
+            gq.debug = true;
+            gq.setup();
+        })
+    </script>
+</body>
+</html>
